@@ -1,0 +1,182 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    font-family: 'Lobster', cursive;
+}
+
+/* navigation bar:logo */
+#logo{
+    margin: 5px 34px;
+}
+#logo img{
+    margin: 5px 8px;
+    height: 60px;
+}
+
+
+/* navigation bar: list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* Home section */
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 4px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 610px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+#home h1 strong{
+    color: rgb(5 244 189);
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Lobster', cursive;
+}
+#home a{
+    padding: 6px 20px;
+    border: 1px solid white;
+    background-color: tomato;
+    color:white;
+    margin: 18px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+#home a:hover{
+    background: brown;
+}
+
+
+/* skills section */
+#skills{
+    margin: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#skills .box{
+    border:2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: #fff0f1;
+}
+#skills .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+/* interest section */
+
+#interest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 34px;
+}
+
+#interest img{
+    height: 144px;
+}
+#interest .box{
+    border:2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    
+}
+
+/* about me */
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#about img{
+    height:300px;
+    border-radius: 100px;
+}
+
+
+
+/* utility class */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Lobster', cursive;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Lobster', cursive;
+}
+
+.center{
+    text-align: center;
+}
+
